@@ -14,6 +14,19 @@ public class BasicNavigation {
 
         Thread.sleep(3000); //for demo wait 3 seconds
 
+        String title = driver.getTitle(); // returns <title> some title</title> text
+        String expectedTitle="Google";
+        System.out.println("title is "+ title);
+
+        if(expectedTitle.equals(title)){
+            System.out.println("TEST PASSED");
+        }else {
+            System.out.println("TEST FAILED");
+        }
+
+
+
+
         driver.close();// to close driver
 
 
